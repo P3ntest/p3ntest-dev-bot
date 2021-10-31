@@ -98,7 +98,11 @@ client.on("interactionCreate", async (interaction) => {
       );
     } else if (interaction.commandName === "accept") {
       interaction.options.getMember("client").roles.add("876850716436738098");
+      interaction.channel.setParent("904369569563541524");
       await interaction.reply(messageBuilder("accepted"));
+    } else if (interaction.commandName === "archive") {
+      interaction.channel.setParent("902325000747491338");
+      await interaction.reply(messageBuilder("archived"));
     }
   }
 

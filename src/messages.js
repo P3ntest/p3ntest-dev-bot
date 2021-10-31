@@ -66,4 +66,15 @@ module.exports = {
       )
       .setFooter("P3ntest Development"),
   },
+  archived: {
+    message: "",
+    embed: new MessageEmbed()
+      .setColor("#6e6e6e")
+      .setTitle("🗃️ Commission archived.")
+      // .setThumbnail("https://i.imgur.com/W6XEZ0Z.png")
+      .setDescription(
+        "This commission is marked as done, however will not be deleted."
+      )
+      .setFooter("P3ntest Development"),
+  },
 };
